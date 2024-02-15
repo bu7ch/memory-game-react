@@ -1,0 +1,41 @@
+.memory-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 10px;
+}
+
+.card {
+  width: 100px; 
+  height: 100px; 
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card.matched {
+  opacity: 0.5; 
+}
+
+.card-front {
+  background-color: #FFF; 
+}
+
+.card-back {
+  background-color: yellow; 
+}
