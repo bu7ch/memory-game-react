@@ -43,6 +43,8 @@ const MemoryGame = () => {
 
   useEffect(() => {
     checkForMatch();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flippedCards]);
 
   return (
