@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 // import './MemoryGame.css';
-import { DELAY_DURATION, NUMBER_OF_CARDS } from '../constants';
-
+import { DELAY_DURATION, NUMBER_OF_CARDS } from "../constants";
 
 const MemoryGame = () => {
   const [flippedCards, setFlippedCards] = useState([]);
@@ -53,7 +52,9 @@ const MemoryGame = () => {
         {[...Array(NUMBER_OF_CARDS).keys()].map((index) => (
           <div
             key={index}
-            className={`card ${isCardFlipped(index) ? 'flipped' : ''} ${isCardMatched(index) ? 'matched' : ''}`}
+            className={`card ${isCardFlipped(index) ? "flipped" : ""} ${
+              isCardMatched(index) ? "matched" : ""
+            }`}
             onClick={() => handleCardClick(index)}
             data-testid={`card-${index}`}
           >
