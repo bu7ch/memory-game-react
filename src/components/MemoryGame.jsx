@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import './MemoryGame.css';
+import './MemoryGame.css';
 import { DELAY_DURATION, NUMBER_OF_CARDS } from "../constants";
 
 const MemoryGame = () => {
